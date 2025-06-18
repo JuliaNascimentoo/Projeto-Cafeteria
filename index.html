@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet"/>
+    <title>Cafeteria</title>
+  </head>
+  <body>
+    <div class="caixa-video">
+      <video src="./videos/coffe.mp4" loop muted autoplay></video>
+      <div class="mascara"></div>
+    </div>
+
+    <header>
+      <section>
+        <a href="#">
+          <img src="./img/logo.png" alt="logo-cafeteria" />
+        </a>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Sobre</a>
+          <a href="#" onclick="mostrarModal()">Endereço</a>
+        </nav>
+      </section>
+    </header>
+
+    <section class="caixa-principal">
+      <div>
+        <h3>Aprecie o melhor café da região</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          enim alias impedit expedita maiores beatae omnis quos quod hic
+          facilis, natus voluptatum est, porro deleniti repellendus accusamus
+          officiis voluptatem rerum?
+        </p>
+        <a class="botao-link">Peça já o seu agora</a>
+      </div>
+    </section>
+
+    <section class="caixa-sobre">
+      <h2 class="titulos"><span>Sobre</span> nós</h2>
+      <div class="sobre-container">
+        <div class="sobre-img">
+          <img src="img/about-img.jpg" />
+        </div>
+        <div class="sobre-texto">
+          <h3>O que faz nosso café especial?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            delectus totam temporibus tempora eveniet perferendis sapiente
+            consectetur maiores sint, enim earum est ipsam quas eum illum
+            doloremque ad accusantium vel!
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ea
+            reiciendis minima, recusandae, cumque laudantium, ab quod est
+            doloremque ullam provident. Perferendis iusto consequatur ut
+            corporis quos soluta nostrum magni.
+          </p>
+          <a class="botao-link">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal">
+      <h3 class="titulos"><span>Nosso</span> endereço</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.292737105126!2d-43.917576!3d-19.9120652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69a242c99e9c3%3A0x45825ed57e68a8d3!2sLanchonete%20Cafel%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1750271191208!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
